@@ -51,10 +51,10 @@ if audio_stream is None:
     exit(1)
     
 # Azure Speech-to-Text API endpoint
-url = 'https://westeurope.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=tr-TR'
+url = 'url'
 
 # Setup speech recognizer
-speech_config = speechsdk.SpeechConfig(subscription="0a74439783c7472480053971e194fbf6", region="westeurope")
+speech_config = speechsdk.SpeechConfig(subscription="key", region="westeurope")
 speech_config.speech_recognition_language = "tr-TR"  # Set the language to Turkish
 
 speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config)
